@@ -1,4 +1,4 @@
-from time import  time, gmtime, strftime
+from time import  time, strftime
 
 current_time = time()
 
