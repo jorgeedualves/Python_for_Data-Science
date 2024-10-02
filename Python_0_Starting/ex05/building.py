@@ -3,6 +3,8 @@ import sys, string
 def main():
 
     try:
+        if len(sys.argv) > 2:
+            raise Exception("More than one argument is provided")
         assert len(sys.argv) == 2, "Usage: provide a string"
 
         chars = len(sys.argv[1])
@@ -22,6 +24,7 @@ def main():
     
     except AssertionError as e:
         print(f"AssertionError: {e}")
-
+    except Exception as e:
+        print(f"Exception: {e}")
 if __name__ == "__main__":
     main()    

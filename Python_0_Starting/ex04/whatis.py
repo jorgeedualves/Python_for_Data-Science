@@ -14,6 +14,8 @@ def main():
         print(f"AssertionError: {e}")
     except ValueError as e:
         print("Argument is not a valid integer.")
+    except IndexError as e:
+        print("AssertionError: list index out of range")
     
 if __name__ == "__main__":
     main()
